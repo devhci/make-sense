@@ -172,11 +172,14 @@ class ImagePreview extends React.Component<IProps, IState> {
                         />
                     ] :
                     <ClipLoader
-                        sizeUnit={"px"}
+                       
                         size={30}
                         color={CSSHelper.getLeadingColor()}
                         loading={true}
-                    />}
+                    />
+
+
+                    }
             </div>)
     }
 }

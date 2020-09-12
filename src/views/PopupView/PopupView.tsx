@@ -46,7 +46,7 @@ const PopupView: React.FC<IProps> = ({activePopupType}) => {
                 return <SuggestLabelNamesPopup/>;
             case PopupWindowType.LOADER:
                 return <ClipLoader
-                    sizeUnit={"px"}
+                    
                     size={50}
                     color={CSSHelper.getLeadingColor()}
                     loading={true}

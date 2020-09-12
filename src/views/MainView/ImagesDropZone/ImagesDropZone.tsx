@@ -79,13 +79,9 @@ const ImagesDropZone: React.FC<IProps> = ({updateActiveImageIndex, addImageData,
                 {getDropZoneContent()}
             </div>
             <div className="DropZoneButtons">
+               
                 <TextButton
-                    label={"Object Detection"}
-                    isDisabled={!acceptedFiles.length}
-                    onClick={() => startEditor(ProjectType.OBJECT_DETECTION)}
-                />
-                <TextButton
-                    label={"Image recognition"}
+                    label={"Start"}
                     isDisabled={!acceptedFiles.length}
                     onClick={() => startEditor(ProjectType.IMAGE_RECOGNITION)}
                 />

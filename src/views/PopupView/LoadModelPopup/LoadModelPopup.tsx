@@ -111,7 +111,7 @@ export const LoadModelPopup: React.FC = () => {
             <div className="Companion">
                 {modelIsLoadingStatus ?
                     <ClipLoader
-                        sizeUnit={"px"}
+                       
                         size={40}
                         color={CSSHelper.getLeadingColor()}
                         loading={true}
@@ -128,9 +128,10 @@ export const LoadModelPopup: React.FC = () => {
         <GenericYesNoPopup
             title={"Say hello to AI"}
             renderContent={renderContent}
-            acceptLabel={"Use model!"}
-            onAccept={onAccept}
+           // acceptLabel={"Use model!"}
+            //onAccept={onAccept}
             disableAcceptButton={modelIsLoadingStatus || !extractSelectedModel()}
+
             rejectLabel={"I'm going on my own"}
             onReject={onReject}
             disableRejectButton={modelIsLoadingStatus}
